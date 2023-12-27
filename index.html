@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <script src="script.js"></script>
+    <audio id="button-sound" src="sounds/333043__christopherderp__videogame-menu-button-clicking-sound-16.wav"></audio>
+    <audio id="intro-sound" src="sounds/476548__mrthenoronha__platform-game-theme-loop-4.wav"></audio>
+    <audio id="loser-sound" src="sounds/703542__yoshicakes77__dead.ogg"></audio>
+    <audio id="winner-sound" src="sounds/703543__yoshicakes77__win.ogg"></audio>
+    <div class="header">
+        <img id="rps" src="img/rock-paper-scissors.png" alt="An illustration picture of hands playing rock-paper-scissors">
+        <h1>ROCK PAPER SCISSORS</h1>
+    </div>
+    <div class="welcome-container">
+        <img id="winking-girl" class="Welcome" src="img/woman-standing.png" alt="An illustration of a woman standing and winking with a phone in her hand taking a selfie">
+        <div id="text" class="welcome">Welcome to your Rock-Paper-Scissors dreamland... <br>You can choose to rock on, paper down,
+        or scissors<br> through, it doesn't matter as long as your having fun. <br><br> <button id="welcome-button">SO...LET'S GO HAVE FUN!!!</button></div>
+    </div>
+
+    <div class="start-container">
+        <div class="players computer-container">
+            <img id="computer" src="img/android.png" alt="An illustration of a robot">
+        </div>
+        <div class="players player-container">
+            <img id="player" src="img/woman-posing.png" alt="An illustration of a woman with one hand up in a peace sign and one leg bent up at the knee in a cute pose ">
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <div class="game-container">
+        <div class="score-board">
+            <div class="player-score">0</div>
+            <div class="computer-score">0</div>
+        </div>
+        <div class="icon-container">
+            <div>
+                <img id="player-icon" src="img/player-icon.png" alt="An illustration of a woman in a gamer's chair ready to play a game">
+                <h2 class="gamer">PLAYER</h2>
+            </div>
+            <div>
+                <img id="computer-icon" src="img/computer-icon.png" alt="An illustration of a robot in a television">
+                <h2 class="gamer">COMPUTER</h2>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="player-buttons">
+                <button class="player-choice" id="player-rock"><img class="rps-images" src="img/stone.png" alt="An illustration of a rock"></button>
+                <button class="player-choice" id="player-paper"><img class="rps-images" src="img/fancy-paper.png" alt="An illustration of a paper"></button>
+                <button class="player-choice" id="player-scissors"><img class="rps-images" src="img/scissors-img.png" alt="An illustration of a scissors"></button>
+            </div>
+            <div class="round-result">
+                <div class="popup">
+                    <img id="popup-img" src="img/doing-great.png" alt="An illustration of a woman with heart shape eyes and her fingers interlaced below chin">
+                    <p id="popup-text">You're doing great</p>
+                </div>
+                <p class="result"></p>
+            </div>
+            <div class="computer-buttons">
+                <button class="computer-choice" id="computer-rock"><img class="rps-images" src="img/rock.png" alt="An illustration of a rock"></button>
+                <button class="computer-choice" id="computer-paper"><img class="rps-images" src="img/paper.png" alt="An illustration of a paper"></button>
+                <button class="computer-choice" id="computer-scissors"><img class="rps-images" src="img/scissors.png" alt="An illustration of a scissors"></button>
+
+            </div>
+        </div>
+    </div>
+    <h2 id="gameover-text" class="game-over">HPOOOO</h2>
+    <div id="you-win" class="game-over">
+        <img id="win-img" src="img/you-win.png" alt="An illustration of a woman screaming yay with her fist pumped up">
+        <p id="winner-text">YOU WON&#129321;&#128293;&#127775;</p>
+    </div>
+    <div id="you-lose" class="game-over">
+        <img id="lose-img" src="img/you-lose.png" alt="An illustration of a woman with tears streaming down her face">
+         <p id="loser-text">YOU LOST&#x1F62D;&#x1F62D;&#x1F62D;</p>
+    </div>
+    <button id="play-again" class="game-over" >PLAY AGAIN</button>
 </body>
 </html>
