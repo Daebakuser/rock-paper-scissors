@@ -1,0 +1,295 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: #fa8072;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    
+}
+
+.green-glow{
+    box-shadow: 0 0 50px #31b43a;
+}
+
+.red-glow{
+    box-shadow: 0 0 50px #d01115;
+}
+
+.gray-glow{
+    box-shadow: 0 0 50px #25292b;
+}
+
+#rps{
+    width:100px;
+}
+
+.welcome-container{
+    margin: 180px auto 0 auto;
+    background-color: #fa8072;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    width: 50%;
+    border: 10px double #000000;
+    display: none;
+}
+
+.welcome{
+    position: absolute;
+}
+
+#winking-girl{
+    width: 200px;
+    height: 300px;
+}
+
+#text{
+    margin-top: 80px;
+    font-size: 20px;
+    width: 40%;
+    top: 43%;
+    left: 53%;
+    text-align: center;
+    transform: translate(-43%, -43%);
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+#welcome-button{
+    border: 7px double #000000;
+    border-radius: 40%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #25292b;
+    color: #fa8072;
+}
+
+.start-container{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 98%;
+    display: none;
+}
+
+#player, #computer{
+    width: 200px;
+    height: 300px;
+}
+
+.players{
+    position: absolute;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+.computer-container{
+    left: 0px;
+    animation-name: slideInLeft;
+}
+
+.player-container{
+    right: 0px;
+    animation-name: slideInRight;
+}
+
+@keyframes slideInLeft{
+    0%{
+        left: -100px;
+    }
+    50%{
+        left: 300px;
+    }
+    100%{
+        left: 400px;
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        right: -100px;
+    }
+    50%{
+        right: 300px;
+    }
+    100%{
+        right: 400px;
+    }
+}
+
+.button-container{
+    text-align: center;
+    display: none;
+    
+}
+
+#start-button{
+    background-color: #ffffff;
+    border: 10px double #000000;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 900;
+    margin-top: 320px;
+    font-size: 18px;
+}
+
+.game-container{
+    display: none;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: -40px;
+}
+
+#player-icon, #computer-icon,#popup-img{
+    width: 200px;
+    height: 200px;
+}
+
+.gamer{
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.score-board{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.player-score{
+    background-color: #df80ff;
+}
+
+.computer-score{
+    background-color: #006699;
+}
+
+.player-score,.computer-score{
+    width: 70px;
+    height: 70px;
+    border-radius: 200px;
+    border: 10px solid #000000;
+    text-align:center;
+    font-size: 60px;
+    
+}
+
+.player-buttons,.computer-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.player-choice{
+    background-color: #df80ff;
+    border: 6px groove #df80ff;
+}
+
+.player-choice:hover,#start-button:hover{
+    cursor: pointer;
+}
+
+.computer-choice{
+    background-color: #006699;
+     border: 6px groove #006699;
+}
+
+.player-choice,.computer-choice{
+    border-radius: 20px;
+}
+
+.rps-images{
+    width: 200px;
+    height: 100px;
+}
+
+.popup{
+    display: none;
+}
+
+#popup-img{
+    margin-top: 30px;
+}
+
+#popup-text{
+    margin-top: -25px;
+    margin-left: 50px;
+    background-color: #ffb3d9;
+    border: 10px double #000000;
+    border-radius: 50px;
+    font-size: 20px;
+    color:#000000;
+    padding: 10px;
+}
+
+.result,#popup-text{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.result{
+    margin-top: 150px;
+    font-size: 25px;
+}
+
+#win-img,#lose-img{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+#gameover-text{
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+#winner-text,#loser-text{
+    font-size: 30px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.game-over{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#play-again{
+    font-size: 17px;
+    border: 10px solid #000000;
+    border-radius: 100px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ffb3d9;
+}
+
+#you-win,#you-lose,#gameover-text,#play-again{
+    display: none;
+}
