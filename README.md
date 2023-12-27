@@ -41,3 +41,5 @@ SOUNDS GOTTEN FROM freesound.org
 ***Sounds used for when player wins or loses by freesound user === Yoshicakes77.
 
 CREDIT TO THE OWNERS.
+
+[LIVE DEMO OF THE GAME](https://daebakuser.github.io/rock-paper-scissors/)
